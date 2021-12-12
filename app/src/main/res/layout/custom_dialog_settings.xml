@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/customBgColor"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:padding="7dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/customBgCloseColor">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ayarlar"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:layout_toLeftOf="@+id/custom_dialog_settings_imageViewClose"
+            android:textColor="@color/customTextColor"/>
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:id="@+id/custom_dialog_settings_imageViewClose"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_close"
+            android:layout_alignParentRight="true"/>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Müzik Aç - Kapat:"
+            android:layout_gravity="center"
+            android:textColor="@color/customTextColor"
+            android:textStyle="bold"
+            android:textSize="17sp"/>
+
+
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="15dp">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/custom_dialog_settings_radioBtnMusicClose"
+                        android:text="Kapat"
+                        android:textSize="15sp"
+                        android:textColor="@color/customTextColor"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/custom_dialog_settings_radioBtnMusicOpen"
+                        android:layout_marginLeft="15dp"
+                        android:text="Aç"
+                        android:textSize="15sp"
+                        android:textColor="@color/customTextColor"/>
+
+                </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="15dp">
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:id="@+id/custom_dialog_settings_btnChangeName"
+            android:background="@drawable/btn_round_bg_2"
+            android:textColor="@color/customBtnTextColor"
+            android:text="İsmimi Değiştir"
+            android:textAllCaps="false"
+            android:textSize="17sp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:layout_width="170dp"
+            android:layout_height="50dp"
+            android:id="@+id/custom_dialog_settings_btnChangeProfileImage"
+            android:background="@drawable/btn_round_bg_2"
+            android:textColor="@color/customBtnTextColor"
+            android:layout_marginLeft="15dp"
+            android:text="Resmimi Değiştir"
+            android:textAllCaps="false"
+            android:textSize="17sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+</LinearLayout>

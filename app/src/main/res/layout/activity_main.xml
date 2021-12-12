@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainbg"
+    android:id="@+id/main_activty_constra"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/userprofile"
+        android:layout_marginLeft="57dp"
+        android:id="@+id/main_activity_imageViewUserNameBg"
+        app:layout_constraintTop_toTopOf="@id/main_activity_circleImageViewProfile"
+        app:layout_constraintBottom_toBottomOf="@id/main_activity_circleImageViewProfile"
+        app:layout_constraintLeft_toLeftOf="@id/main_activity_circleImageViewProfile"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLength="15"
+        android:text="Furkan"
+        android:id="@+id/main_activity_textViewUserName"
+        android:textSize="11sp"
+        android:textStyle="bold"
+        android:textColor="@color/mainUserNameTextColor"
+        app:layout_constraintTop_toTopOf="@+id/main_activity_imageViewUserNameBg"
+        app:layout_constraintBottom_toBottomOf="@+id/main_activity_imageViewUserNameBg"
+        app:layout_constraintRight_toRightOf="@id/main_activity_imageViewUserNameBg"
+        app:layout_constraintLeft_toLeftOf="@id/main_activity_imageViewUserNameBg"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+        android:src="@drawable/ic_person"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:id="@+id/main_activity_circleImageViewProfile"
+        app:civ_border_width="8dp"
+        app:civ_border_color="@color/mainCircleImageBorderColor"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:src="@drawable/heartdesign"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/main_activity_circleImageViewProfile"
+        android:layout_marginRight="5dp"
+        android:id="@+id/main_activity_imageViewHeartDesign"/>
+
+    <Button
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:text="+"
+        android:id="@+id/main_activty_btnHakKazan"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:textColor="@color/mainButtonTextColor"
+        android:layout_marginRight="12dp"
+        android:background="@drawable/btn_round_bg"
+        app:layout_constraintTop_toTopOf="@+id/main_activity_imageViewHeartDesign"
+        app:layout_constraintBottom_toBottomOf="@+id/main_activity_imageViewHeartDesign"
+        app:layout_constraintRight_toLeftOf="@+id/main_activity_linearLayout1"/>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/main_activity_linearLayout1"
+        app:layout_constraintTop_toTopOf="@+id/main_activity_imageViewHeartDesign"
+        app:layout_constraintRight_toRightOf="@+id/main_activity_imageViewHeartDesign"
+        app:layout_constraintBottom_toBottomOf="@+id/main_activity_imageViewHeartDesign"
+        app:layout_constraintLeft_toLeftOf="@+id/main_activity_imageViewHeartDesign">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/mainUserHeartTextColor"
+            android:textSize="13sp"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:text="+1"
+            android:id="@+id/main_activity_textViewUserHeartCount"/>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/main_activity_imageViewHeart"
+            android:src="@drawable/heart"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_setting"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="end"
+            android:onClick="btnAyarlar"/>
+
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/main_activity_adView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            ads:adSize="FULL_BANNER"
+            android:visibility="gone"
+            ads:adUnitId="ca-app-pub-3940256099942544/6300978111">
+        </com.google.android.gms.ads.AdView>
+
+    </LinearLayout>
+
+        <ImageView
+        android:id="@+id/main_activity_imageViewAppNameLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/appnamelogo"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/main_activity_circleImageViewProfile"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="70dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/main_activity_imageViewAppNameLogo">
+
+
+        <Button
+            android:id="@+id/main_activity_btnPlay"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:onClick="mainBtnClick"
+            android:background="@drawable/btn_play_bg"
+            android:layout_marginTop="15dp"
+            app:backgroundTint="@null"/>
+
+        <Button
+            android:id="@+id/main_activity_btnShop"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:onClick="mainBtnClick"
+            android:background="@drawable/btn_shop_bg"
+            android:layout_marginTop="15dp"
+            app:backgroundTint="@null"/>
+
+        <Button
+            android:id="@+id/main_activity_btnExit"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:onClick="mainBtnClick"
+            android:background="@drawable/btn_exit_bg"
+            android:layout_marginTop="15dp"
+            app:backgroundTint="@null"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/customBgColor"
+    android:padding="7dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/customBgCloseColor">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Can Elde Et"
+            android:textSize="27sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:layout_toLeftOf="@+id/custom_dialog_get_heart_imageViewClose"
+            android:textColor="@color/customTextColor"/>
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:id="@+id/custom_dialog_get_heart_imageViewClose"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_close"
+            android:layout_alignParentRight="true"/>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/video"
+                android:background="@drawable/img_round_bg"
+                android:id="@+id/custom_dialog_get_heart_imageViewShowAndGet"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="İzle Kazan"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:layout_marginTop="3dp"
+                android:textSize="17sp"
+                android:textColor="@color/customTextColor" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="15dp">
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/shop"
+                android:padding="5dp"
+                android:background="@drawable/img_round_bg"
+                android:id="@+id/custom_dialog_get_heart_imageViewBuyAndGet"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Satın Al"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:layout_marginTop="3dp"
+                android:textSize="17sp"
+                android:textColor="@color/customTextColor" />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="@color/customBgCloseColor"
+        android:layout_marginTop="15dp"/>
+
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashScreenActivity"
+    android:background="@drawable/splashscreendesign">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/appnamelogo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="40dp"/>
+
+    <ProgressBar
+        android:id="@+id/splash_screen_activity_progressBar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="180dp"
+        android:max="100"
+        android:min="0"
+        android:progressTint="#C57705"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="25dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/SplashScreenTextColor"
+        android:text="Durum"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        android:id="@+id/splash_screen_activity_textViewState"
+        app:layout_constraintRight_toRightOf="@id/splash_screen_activity_progressBar"
+        app:layout_constraintLeft_toLeftOf="@id/splash_screen_activity_progressBar"
+        app:layout_constraintTop_toBottomOf="@id/splash_screen_activity_progressBar"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
