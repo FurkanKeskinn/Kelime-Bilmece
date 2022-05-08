@@ -621,7 +621,7 @@ public class MainActivity extends AppCompatActivity implements PurchasesUpdatedL
         AlertDialog.Builder alert= new AlertDialog.Builder(this);
         alert.setTitle("Kelime Bilmece");
         alert.setIcon(R.mipmap.ic_kelimebilmece);
-        alert.setMessage("uygulamadan Çıkmak İstediğinize emin Misiniz?");
+        alert.setMessage("Uygulamadan Çıkmak İstediğinize Emin Misiniz?");
         alert.setPositiveButton("Hayır", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
